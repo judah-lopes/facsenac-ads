@@ -11,7 +11,7 @@ Documentar e salvar todos os arquivos de deveres, trabalhos e projetos que forem
 ## :wrench: Tecnologias utilizadas
 <div>
    
-   [![My Skills](https://skillicons.dev/icons?i=html)](https://skillicons.dev)
+   [![My Skills](https://skillicons.dev/icons?i=html,css)](https://skillicons.dev)
 <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" width="50px;"/>   
    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" width="50px"/>
    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" width="50px"/> -->
