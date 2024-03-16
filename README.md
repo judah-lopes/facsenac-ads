@@ -29,15 +29,15 @@ A formação em ADS tem 2 anos de duração, sendo assim, 4 semestres. Logo, a e
 #### PADRÃO DE COMMITS
 <table>
   <tr>
-    <td align="center">:doc</td>
+    <td align="center">doc:</td>
     <td>Documentação</td>
   </tr>
   <tr>
-    <td align="center">:atv</td>
+    <td align="center">atv:</td>
     <td>Atividades</td>
   </tr>
   <tr>
-    <td align="center">:avl</td>
+    <td align="center">avl:</td>
     <td>Provas</td>
   </tr>
 </table>
