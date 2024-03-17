@@ -57,7 +57,8 @@ body{
 /* botão */
 .redirect-btn{
     height: 40px;
-    width: 60%;
+    width: fit-content;
+    padding: 0 20px;
 
     margin: 30px 0;
 
@@ -79,5 +80,6 @@ body{
     box-shadow: 0px 10px 20px #6a6c6d98;
 }
 a{
+    color: white;
     text-decoration: none;
 }

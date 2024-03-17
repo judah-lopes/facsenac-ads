@@ -1,4 +1,4 @@
-<h1 align="center">:file_cabinet: fac_senac-ads</h1>
+<h1 align="center">:file_cabinet: facsenac-ads</h1>
 
 ## 📜 Descrição
 
