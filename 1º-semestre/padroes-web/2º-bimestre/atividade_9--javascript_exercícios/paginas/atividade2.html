@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificador de IMC</title>
+    <style>
+        body {
+            background-color: #d4edda;
+        }
+        #situacao {
+            font-weight: bold;
+        }
+        .normal {
+            color: green;
+        }
+        .alerta {
+            color: orange;
+        }
+        .perigo {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1><i>Identificador de IMC</i></h1>
+    <form id="formIMC" onsubmit="calcularIMC(event)">
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" step="0.1" required>
+        <br>
+        <label for="altura">Altura (cm):</label>
+        <input type="number" id="altura" step="0.1" required>
+        <br>
+        <button type="submit">Calcular IMC</button>
+    </form>
+    <p>IMC: <span id="imc"></span></p>
+    <p>Situação: <span id="situacao"></span></p>
+
+    <script>
+        function calcularIMC(event) {
+            event.preventDefault();
+
+            let peso = parseFloat(document.getElementById("peso").value);
+            let alturaCm = parseFloat(document.getElementById("altura").value);
+            let alturaM = alturaCm / 100; // Converter altura de cm para metros
+            let imc = peso / (alturaM * alturaM);
+
+            let situacao = "";
+            let classe = "";
+
+            if (imc < 18.5) {
+                situacao = "Muito abaixo do peso";
+                classe = "perigo";
+            } else if (imc >= 18.5 && imc < 24.9) {
+                situacao = "Normal";
+                classe = "normal";
+            } else if (imc >= 25 && imc < 29.9) {
+                situacao = "Acima do peso";
+                classe = "alerta";
+            } else if (imc >= 30 && imc < 34.9) {
+                situacao = "Obesidade I";
+                classe = "perigo";
+            } else if (imc >= 35 && imc < 39.9) {
+                situacao = "Obesidade II";
+                classe = "perigo";
+            } else if (imc >= 40) {
+                situacao = "Obesidade III";
+                classe = "perigo";
+            }
+
+            document.getElementById("imc").innerHTML = imc.toFixed(2); //toFixed serve para arredodndar para 2 casas decimais
+            let situacaoElement = document.getElementById("situacao");
+            situacaoElement.innerHTML = situacao;
+            situacaoElement.className = classe;
+        }
+    </script>
+    <a href="../index.html">
+        <img src="../imagem/botão.png" alt="Tecla voltar" width="65">
+    </a>
+</body>
+</html>

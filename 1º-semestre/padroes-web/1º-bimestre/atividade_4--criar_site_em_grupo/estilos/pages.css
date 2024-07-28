@@ -1,0 +1,177 @@
+.container-zico{
+    background-image: url(../imagens/landscapes/zico-landscape.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-gabigol{
+    background-image: url(../imagens/landscapes/gabigol-landscape.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-imperador{
+    background-image: url(../imagens/landscapes/imperador-landscape.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-neymar{
+    background-image: url(../imagens/landscapes/neymar-landscape.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-arrascaeta{
+    background-image: url(../imagens/landscapes/arrascaeta-landscape.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section{
+    height: 100%;
+    width: 70%;
+
+    display: flex;
+}
+aside{
+    width: 10%;
+    background-color: var(--rubro);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+
+article{
+    height: 100%;
+    width: 90%;
+    background: #000;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+article p{
+    margin-left: 3rem;
+    width: 50%;
+    
+    text-indent: 4rem;
+    text-align: justify;
+}
+.first-p::first-letter{
+    font-size: 300%;
+}
+article h1{
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+a{
+    position: absolute;
+    bottom: 3rem;
+
+    margin-left: 3rem;
+    width: fit-content;
+    padding: .5rem .8rem;
+    
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    border-radius: .5rem;
+    border: .15rem solid #fff;
+}
+@media screen and (min-width: 789px) {
+    a:hover{
+        background-color: var(--rubro);
+        
+        border: none;
+
+        transform: translateY(-7px);
+        transition-duration: .4s;
+    }
+
+    article{
+        background: linear-gradient(90deg, #000 40%, #ffffff00 100%);
+    }
+
+    .direita-article{
+        background: linear-gradient(-90deg, #000 40%, #ffffff00 100%);
+    }
+}
+
+.direita-section{
+    position: absolute;
+    right: 0;
+
+    flex-direction: row-reverse;
+}
+.direita-article p{
+    align-self: flex-end;
+    margin-left: 0;
+    margin-right: 3rem;
+}
+.direita-article a{
+    right: 13.5%;
+}
+
+@media screen and (max-width: 789px) {
+    .container{
+        height: 100vh;
+    }
+
+    .container-zico{
+        background-image: url(../imagens/portraits/zico-portrait.jpg);
+    }
+    .container-gabigol{
+        background-image: url(../imagens/portraits/gabigol-portrait.png);
+    }
+    .container-imperador{
+        background-image: url(../imagens/portraits/imperador-portrait.png);
+    }
+    .container-neymar{
+        background-image: url(../imagens/portraits/neymar-portrait.jpg);
+    }
+    .container-arrascaeta{
+        background-image: url(../imagens/portraits/arrascaeta-portrait.png);
+    }
+
+    section, .direita-section{
+        width: 100%;
+        flex-direction: column;
+    }
+    aside{
+        width: 100%;
+        height: 8rem;
+        flex-direction: row;
+    }
+    article, .direita-article{
+        width: 100%;
+        background-color: #000000a2;
+
+        align-items: center;
+    }
+    article p, .direita-article p{
+        margin: 0;
+        width: 80%;
+        
+        font-size: 2rem;
+    }
+
+    .direita-article p {
+        align-self: center;
+    }
+
+    a{
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+

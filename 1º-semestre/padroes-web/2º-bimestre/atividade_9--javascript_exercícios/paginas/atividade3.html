@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <style>
+        body {
+           background-color: #d4edda;
+       }
+   </style>
+</head>
+
+<body>
+    <h1><i>Adicionando na lista<i></h1>
+    <h2>O Método appendChild()</h2>
+
+    <ul id="myList">
+    </ul>
+
+    <br>
+    <input type="text" id="palavra">
+    <br>
+    <input type="radio" name="cores" value="red" id="red">
+    <label for="red">Vermelho</label>
+    <input type="radio" name="cores" value="green" id="green">
+    <label for="green">Verde</label>
+    <input type="radio" name="cores" value="blue" id="blue">
+    <label for="blue">Azul</label>
+    
+    <p>Clique em <strong>"Adicionar"</strong> para adicionar um item ao final da lista:</p>
+
+    <button onclick="myFunction()">Adicionar</button>
+
+    <script>
+        function myFunction() {
+
+            // Cria um nó "li":
+            const node = document.createElement("li");
+
+            // Cria um nó de texto:
+            let palavra = document.getElementById('palavra').value;
+            const textnode = document.createTextNode(palavra);
+
+            // Adiciona o nó de texto ao nó "li":
+            node.appendChild(textnode);
+
+            // Adiciona o nó "li" à lista:
+            let cor = document.querySelector('input[name="cores"]:checked').value;
+            node.style.color = cor;
+            document.getElementById("myList").appendChild(node);
+        }
+    </script>
+    <br>
+    <br>
+    <a href="../index.html">
+        <img src="../imagem/botão.png" alt="Tecla voltar" width="65">
+    </a>
+    </a>
+</body>
+
+</html>

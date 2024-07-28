@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <style>
+         body {
+            background-color: #d4edda;
+        }
+        #situacao {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1><i>Calculadora de Média</i></h1>
+    <form id="formMedia">
+        <label for="nota1">Nota 1:</label>
+        <input type="number" id="nota1" step="0.01" required>
+        <br>
+        <label for="nota2">Nota 2:</label>
+        <input type="number" id="nota2" step="0.01" required>
+        <br>
+        <button type="submit">Calcular Média</button>
+    </form>
+    <p>Média: <span id="media"></span></p>
+    <p>Situação: <span id="situacao"></span></p>
+
+    <script>
+        document.getElementById("formMedia").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            let nota1 = parseFloat(document.getElementById("nota1").value);
+            let nota2 = parseFloat(document.getElementById("nota2").value);
+            let media = (nota1 + nota2) / 2;
+
+            let situacao = "";
+            let cor = "";
+
+            if (media >= 6) {
+                situacao = "APROVADO :)";
+                cor = "blue";
+            } else {
+                situacao = "REPROVADO :(";
+                cor = "red";
+            }
+
+            document.getElementById("media").innerHTML = media.toFixed(2);
+            document.getElementById("situacao").innerHTML = situacao;
+            document.getElementById("situacao").style.color = cor;
+        });
+    </script>
+    <a href="../index.html">
+        <img src="../imagem/botão.png" alt="Tecla voltar" width="65">
+    </a>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <style>
+        body {
+           background-color: #d4edda;
+       }
+   </style>
+</head>
+<body>
+    <h1><i>Calculadora de Média</i></h1>
+    <p>Média: <span id="media"></span></p>
+    <p>Situação: <span id="situacao"></span></p>
+
+    <script>
+        let nota1 = parseFloat(prompt("Digite a sua primeira nota:"));
+        let nota2 = parseFloat(prompt("Digite a sua segunda nota:"));
+        let media = (nota1 + nota2) / 2;
+
+        let situacao = "";
+        let cor = "";
+
+        if (media >= 6) {
+            situacao = "APROVADO :)";
+            cor = "blue";
+        } else {
+            situacao = "REPROVADO :(";
+            cor = "red";
+        }
+
+        document.getElementById("media").innerHTML = media.toFixed(2);
+        document.getElementById("situacao").innerHTML = situacao;
+        document.getElementById("situacao").style.color = cor;
+    </script>
+    
+    <a href="../index.html">
+        <img src="../imagem/botão.png" alt="Tecla voltar" width="65">
+    </a>
+</body>
+</html>
