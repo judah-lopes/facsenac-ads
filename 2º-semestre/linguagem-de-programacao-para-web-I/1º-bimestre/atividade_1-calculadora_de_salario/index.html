@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="deadpol.ico" type="image/x-icon">
+    <title>Calculadora de Salário</title>
+</head>
+<body>
+    <h1>Calculadora de Salário</h1></p>
+    <p><b>Curso:</b> Analise e Desenvolvimento de Sistemas <br>	
+        <b>Disciplina:</b> Linguagem de Programação para Web I <br>
+        <b>Aluno:</b> Pedro Judah <br>
+    </p> 
+</body>
+<script>
+    do {
+        var horas = Number(prompt("Digite as horas trabalhadas (de 135 a 180):"));
+        if (horas < 135 || horas > 180) {
+            alert("Valor inválido. Digite um valor entre 135 e 180.");
+        }
+    } while (horas < 135 || horas > 180);
+
+    do {
+        var valorHora = Number(prompt("Digite o valor da hora trabalhada (de 25 a 50):"));
+        if (valorHora < 25 || valorHora > 50) {
+            alert("Erro: Digite um valor entre 25 e 50 para o valor da hora trabalhada.");
+        }
+    } while (valorHora < 25 || valorHora > 50);
+
+    do {
+        var percentualINSS = Number(prompt("Qual o percentual do seu INSS por mês? (de 5 a 15):"));
+        if (percentualINSS < 5 || percentualINSS > 15) {
+            alert("Erro: Digite uma porcentagem entre 5 e 15 para o INSS.");
+        }
+    } while (percentualINSS < 5 || percentualINSS > 15);
+
+    let salarioBruto = horas * valorHora;
+    let descontoInss = salarioBruto * (percentualINSS / 100);
+    let salarioLiquido = salarioBruto - descontoInss;
+
+    alert(`Salário Bruto: R$ ${salarioBruto.toFixed(2)}\nDesconto INSS: R$ ${descontoInss.toFixed(2)}\nSalário Líquido: R$ ${salarioLiquido.toFixed(2)}`);
+
+    if (salarioLiquido <= 3000) {
+        alert("Atenção: Salário insatisfatório! O valor é menor ou igual a R$ 3.000.");
+    }
+</script>
+</html>
