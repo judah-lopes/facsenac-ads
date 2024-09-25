@@ -47,7 +47,7 @@ A formação em ADS tem 2 anos de duração, sendo assim, 4 semestres. Logo, a e
 Em algumas matérias da formação, podem ser que os professores solicitem a realização de algum curso externo que mereça um repositório dedicado. 
 Os que se encaixarem estarão listados abaixo:
 
-#### Fundamentos de Computação em Nuvem ☁️
+#### ☁️ Fundamentos de Computação em Nuvem 
 - <a href="https://github.com/judah-lopes/aws_academy-cloud_foundations/tree/main">AWS Academy Cloud Foundations<a>
 
 ## :handshake: Colaboradores
