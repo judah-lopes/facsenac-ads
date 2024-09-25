@@ -43,7 +43,7 @@ A formação em ADS tem 2 anos de duração, sendo assim, 4 semestres. Logo, a e
   </tr>
 </table>
 
-## Cursos Transversais
+## 🔀 Cursos Transversais
 Em algumas matérias da formação, podem ser que os professores solicitem a realização de algum curso externo que mereça um repositório dedicado. 
 Os que se encaixarem estarão listados abaixo:
 
