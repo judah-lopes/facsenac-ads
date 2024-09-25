@@ -49,7 +49,7 @@ Em algumas matérias da formação, podem ser que os professores solicitem a rea
 Os que se encaixarem estarão listados abaixo:
 
 #### ☁️ Fundamentos de Computação em Nuvem 
-- <a href="https://github.com/judah-lopes/aws_academy-cloud_foundations/tree/main">AWS Academy Cloud Foundations<a>
+-> <a href="https://github.com/judah-lopes/aws_academy-cloud_foundations/tree/main">AWS Academy Cloud Foundations<a>
 
 ## :handshake: Colaboradores
 
