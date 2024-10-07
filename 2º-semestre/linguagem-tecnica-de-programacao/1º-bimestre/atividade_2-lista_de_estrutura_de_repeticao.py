@@ -35,7 +35,6 @@ for i in valores:
 porcentagem_positivos = (contador_positivos / len(valores)) * 100
 porcentagem_negativos = (contador_negativos / len(valores)) * 100
 
-
 media = sum(valores) / len(valores)
 
 print(f'\nMedia aritmetica = {media:.1f}\nPorcentagem de positivos = {porcentagem_positivos:.2f}%\nPorcentagem de negativos = {porcentagem_negativos:.2f}%')

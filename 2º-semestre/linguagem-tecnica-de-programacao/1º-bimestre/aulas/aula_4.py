@@ -10,20 +10,20 @@
 
 # # -----------------------------------------------------------------------------
 # # Exercício 2 - lista de frutas
-frutas = [input('digite uma fruta: ') for i in range(3)]
-for fruta in frutas:
-    print(f'Qual a fruta? {fruta}')
+# frutas = [input('digite uma fruta: ') for i in range(3)]
+# for fruta in frutas:
+#     print(f'Qual a fruta? {fruta}')
 
-# -----------------------------------------------------------------------------
-# Exercício 3 - soma dos quadrados
-soma = 0
-multi = 1
-for i in range(1, 11):
-   soma = soma + i**2
-   multi = multi * i**2
+# # -----------------------------------------------------------------------------
+# # Exercício 3 - soma dos quadrados
+# soma = 0
+# multi = 1
+# for i in range(1, 11):
+#    soma = soma + i**2
+#    multi = multi * i**2
 
-print(f'a soma é {soma}')
-print(f'a multiplicação é {multi}')
+# print(f'a soma é {soma}')
+# print(f'a multiplicação é {multi}')
 
 # -----------------------------------------------------------------------------
 # Exercício 4 - Senha
