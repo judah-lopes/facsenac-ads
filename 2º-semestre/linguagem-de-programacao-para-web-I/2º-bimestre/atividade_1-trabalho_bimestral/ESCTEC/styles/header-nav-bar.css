@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+width: 100%;
+height: 70px;
+display: flex;
+font-size: 18px;
+justify-content: space-between;
+align-items: center;
+padding: 0px 36px;
+margin: 0.8em;
+border-radius: 8px 0px 8px 0px;
+color: white;
+background-color: var(--cor-primaria);
+}
+
+#logo {
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+#logo img {
+    height: 90%;
+}
+
+#saudacao {
+    max-width: 200px;
+    margin-top: 10px;
+    margin-left: 35px;
+    padding: 10px 15px;
+
+    display: none; /* Oculta a saudação inicialmente */
+    position: relative;
+    align-self: flex-start;
+    background-color: var(--cor-terciaria);
+    border-radius: 8px;
+    
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#saudacao::after {
+    content: "";
+    position: absolute;
+    top: -18px; /* Posição da seta em relação ao balão */
+    left: 10%;
+    
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent var(--cor-terciaria) transparent;
+}
+
+nav {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* Estilização da barra de navegação */
+nav ul {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+}
+
+nav ul li {
+position: relative;
+}
+
+/* Estilização do link do item */
+nav ul li a {
+display: block;
+padding: 10px 15px;
+text-decoration: none;
+color: white;
+}
+
+.dropdown:hover, nav a:hover {
+    color: var(--cor-terciaria);
+    background-color: var(--cor-secundaria);
+}
+
+/* Estilização da lista suspensa */
+nav ul li .drop-list {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background-color: #fff;
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+min-width: 150px;
+}
+
+/* Estilização dos itens da lista suspensa */
+nav ul li .drop-list li a {
+padding: 10px 15px;
+background-color: #fff;
+color: #333;
+}
+
+/* Altera a cor dos links da lista suspensa ao passar o mouse */
+nav ul li .drop-list li a:hover {
+background-color: #f1f1f1;
+}
+
+/* Exibe a lista suspensa quando o mouse estiver sobre o item com a classe 'dropdown' */
+nav ul li.dropdown:hover .drop-list {
+display: block;
+}

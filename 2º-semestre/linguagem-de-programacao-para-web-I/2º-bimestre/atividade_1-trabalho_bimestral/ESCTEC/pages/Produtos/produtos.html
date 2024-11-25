@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/header-nav-bar.css">
+    <link rel="stylesheet" href="../../styles/style-produtos.css">
+    <link rel="shortcut icon" href="../../assets/imgs/logo/logowt.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main-elements">
+        <div id="iframe-modal">
+            <div id="iframe-container"></div>
+        </div>
+        <!-- Cabeçalho -->
+        <header>
+            <div id="logo">
+                <img src="../../assets/imgs/logo/logowt.png" alt="Logotipo da ESCTEC">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li class="dropdown"><a>A empresa</a>
+                        <ul class="drop-list">
+                            <li><a href="../Empresa/missao.html">Missão</a></li>
+                            <li><a href="../Empresa/valores.html">Valores</a></li>
+                            <li><a href="../Empresa/visao.html">Visão</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="produtos.html">Produtos</a>
+                        <ul class="drop-list">
+                            <li><a href="mesas.html">Mesas</a></li>
+                            <li><a href="cadeiras.html">Cadeiras</a></li>
+                            <li><a href="diversos.html">Diversos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../pedidos.html">Pedidos</a></li>
+                    <li><a href="../contato.html">Contato</a></li>
+                    <li id="injetaiframe">Carrinho</li>
+                </ul>
+            </nav>
+        </header>
+        <div id="saudacao"></div> <!-- Div para exibir a saudação -->
+
+        <!-- Carrossel -->
+        <!-- <div class="slider">
+            <div class="slides">
+                <img src="/assets/imgs/carrossel/cadeiras.png" alt="cadeiras">
+                <img src="/assets/imgs/carrossel/diversos.png" alt="diversos">
+                <img src="/assets/imgs/carrossel/mesas.png" alt="mesas">
+            </div>
+        </div> -->
+
+        <!-- Conteúdo da Página -->
+        <main>
+            <h1>Lançamentos! 🔥🔥</h1>
+            <div class="cards-produtos">
+                <div>
+                    <img src="../../assets/imgs/cadeiras/CD_02.png" width="150" height="150" alt="Cadeira Uni"/>
+                    <h4>CD02 - Cadeira Uni</h4>
+                    <p>Cor: preta</p>
+                    <p>Preço: R$ 370,00</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Cadeira Uni', '370,00', '/assets/imgs/cadeiras/CD_02.png')">Adicionar ao Carrinho</button>
+                </div>
+                <div>
+                    <img src="../../assets/imgs/diversos/DV_03.png" width="150" height="150" alt="Banco Benni"/>
+                    <h4>DV03 - Banco Benni</h4>
+                    <p>Preço: R$ 802,00</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Banco Benni', '802,00', '/assets/imgs/diversos/DV_03.png')">Adicionar ao Carrinho</button>
+                </div>
+                <div>
+                    <img src="../../assets/imgs/diversos/DV_08.png" width="150" height="150" alt="Suporte Multiarticulado de Mesa"/>
+                    <h4>DV08 - Suporte Multiarticulado de Mesa</h4>
+                    <p>Preço: R$ 164,00</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Suporte Multiarticulado de Mesa', '164,00', '/assets/imgs/diversos/DV_08.png')">Adicionar ao Carrinho</button>
+                </div>
+                <div>
+                    <img src="../../assets/imgs/mesas/MS_02.png" width="150" height="150" alt="Escrivaninha 135cm c/ Gaveteiro Suspenso"/>
+                    <h4>MS02 - Escrivaninha 135cm c/ Gaveteiro Suspenso</h4>
+                    <p>Preço: R$ 239,99</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Escrivaninha 135cm c/ Gaveteiro Suspenso', '239,99', '/assets/imgs/mesas/MS_02.png')">Adicionar ao Carrinho</button>
+                    
+                </div>
+                <div>
+                    <img src="../../assets/imgs/diversos/DV_05.png" width="150" height="150" alt="Poltrona Vitto"/>
+                    <h4>DV05 - Poltrona Vitto</h4>
+                    <p>Preço: R$ 829,00</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Poltrona Vitto', '829,00', '/assets/imgs/diversos/DV_05.png')">Adicionar ao Carrinho</button>
+                </div>
+                <div>
+                    <img src="../../assets/imgs/mesas/MS_04.png" width="150" height="150" alt="Mesa Industrial Redonda 110cm"/>
+                    <h4>MS05 - Mesa Industrial Redonda 110cm</h4>
+                    <p>Preço: R$ 750,00</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Mesa Industrial Redonda 110cm', '750,00', '/assets/imgs/mesas/MS_04.png')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <h1>Outros produtos</h1>
+            <div class="cards-produtos">
+                <div>
+                    <img src="../../assets/imgs/cadeiras/CD_01.png" width="150" height="150" alt="Cadeira Dot"/>
+                    <h4>CD01 - Cadeira Dot</h4>
+                    <p>Cor: Branco</p>
+                    <p>Preço: R$ 250,00</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Cadeira Dot', '250,00', '/assets/imgs/cadeiras/CD_01.png')">Adicionar ao Carrinho</button>
+                </div>
+                <div>
+                    <img src="../../assets/imgs/cadeiras/CD_03.png" width="150" height="150" alt="Cadeira Uni Pro"/>
+                    <h4>CD03 - Cadeira Uni Pro</h4>
+                    <p>Cor: preta</p>
+                    <p>Preço: R$ 692,00</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Cadeira Uni Pro', '692,00', '/assets/imgs/cadeiras/CD_03.png')">Adicionar ao Carrinho</button>
+                </div>
+                <div>
+                    <img src="../../assets/imgs/cadeiras/CD_04.png" width="150" height="150" alt="Cadeira My Chair"/>
+                    <h4>CD04 - Cadeira My Chair</h4>
+                    <p>Cor: grafite e Azul</p>
+                    <p>Preço: R$ 810,00</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Cadeira My Chair', '810,00', '/assets/imgs/cadeiras/CD_04.png')">Adicionar ao Carrinho</button> 
+                </div>
+                <div>
+                    <img src="../../assets/imgs/cadeiras/CD_05.png" width="150" height="150" alt="Cadeira Tecton"/>
+                    <h4>CD05 - Cadeira Tecton</h4>
+                    <p>Cor: night blue</p>
+                    <p>Preço: R$ 1591,00</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Cadeira Tecton', '1591,00', '/assets/imgs/cadeiras/CD_05.png')">Adicionar ao Carrinho</button>
+                </div>
+                <div>
+                    <img src="../../assets/imgs/cadeiras/CD_06.png" width="150" height="150" alt="Cadeira Flexform Alpha 2 Pro"/>
+                    <h4>CD06 - Cadeira Flexform Alpha 2 Pro</h4>
+                    <p>Cor: preta</p>
+                    <p>Preço: R$ 3180.00</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Cadeira Flexform Alpha 2 Pro', '3180,00', '/assets/imgs/cadeiras/CD_06.png')">Adicionar ao Carrinho</button>
+                </div>
+         
+                <div>
+                    <img src="../../assets/imgs/diversos/DV_01.png" width="150" height="150" alt="Kit de acessórios My Desk"/>
+                    <h4>DV01 - Kit de acessórios My Desk</h4>
+                    <p>Preço: R$ 181,83</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Kit de acessórios My Desk', '181,83', '/assets/imgs/diversos/DV_01.png')">Adicionar ao Carrinho</button>
+                </div>
+                <div>
+                    <img src="../../assets/imgs/diversos/DV_02.png" width="150" height="150" alt="Mesa Jump Baixa"/>
+                    <h4>DV02 - Mesa Jump Baixa</h4>
+                    <p>Preço: R$ 679,00</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Mesa Jump Baixa', '679,00', '/assets/imgs/diversos/DV_02.png')">Adicionar ao Carrinho</button>
+                </div>
+                <div>
+                    <img src="../../assets/imgs/diversos/DV_04.png" width="150" height="150" alt="Roma Espera"/>
+                    <h4>DV04 - Roma Espera</h4>
+                    <p>Preço: R$ 599,00</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Roma Espera', '599,00', '/assets/imgs/diversos/DV_04.png')">Adicionar ao Carrinho</button>
+                </div>
+                <div>
+                    <img src="../../assets/imgs/diversos/DV_06.png" width="150" height="150" alt="Mesa de centro Mince"/>
+                    <h4>DV06 - Mesa de centro Mince</h4>
+                    <p>Preço: R$ 699,99</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Mesa de centro Mince', '699,99', '/assets/imgs/diversos/DV_06.png')">Adicionar ao Carrinho</button>
+                </div>
+                <div>
+                    <img src="../../assets/imgs/diversos/DV_07.png" width="150" height="150" alt="Organizador de Gaveta"/>
+                    <h4>DV07 - Organizador de Gaveta</h4>
+                    <p>Preço: R$ 10,56</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Organizador de Gaveta', '10,56', '/assets/imgs/diversos/DV_07.png')">Adicionar ao Carrinho</button>
+                </div>
+                <div>
+                    <img src="../../assets/imgs/mesas/MS_01.png" width="150" height="150" alt="Mesa Dalla Costa em L c/ Gaveteiro"/>
+                    <h4>MS01 - Mesa Dalla Costa em L c/ Gaveteiro</h4>
+                    <p>Preço: R$ 663,00</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Mesa Dalla Costa em L c/ Gaveteiro', '663,00', '/assets/imgs/mesas/MS_01.png')">Adicionar ao Carrinho</button>
+                </div>
+                <div>
+                    <img src="../../assets/imgs/mesas/MS_03.png" width="150" height="150" alt="Mesa Nogal 270cm c/ Caixas de Tomadas"/>
+                    <h4>MS03 - Mesa Nogal 270cm c/ Caixas de Tomadas</h4>
+                    <p>Preço: R$ 1381,00</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Mesa Nogal 270cm c/ Caixas de Tomadas', '1381,00', '/assets/imgs/mesas/MS_03.png')">Adicionar ao Carrinho</button>
+                </div>
+                <div>
+                    <img src="../../assets/imgs/mesas/MS_05.png" width="150" height="150" alt="Mesa Nogal 380cm c/ Caixas de Tomadas"/>
+                    <h4>MS04 - Mesa Nogal 380cm c/ Caixas de Tomadas</h4>
+                    <p>Preço: R$ 2800,00</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Mesa Nogal 380cm c/ Caixas de Tomadas', '2800,00', '/assets/imgs/mesas/MS_05.png')">Adicionar ao Carrinho</button>
+                </div>
+                <div>
+                    <img src="../../assets/imgs/mesas/MS_06.png" width="150" height="150" alt="Mesa L 120x120cm - Tampo 2,5cm"/>
+                    <h4>MS06 - Mesa L 120x120cm - Tampo 2,5cm</h4>
+                    <p>Preço: R$ 1250,00</p>
+                    <button class="btn-adicionar-carrinho" onclick="adicionarAoCarrinho('Mesa L 120x120cm - Tampo 2,5cm', '1250,00', '/assets/imgs/mesas/MS_06.png')">Adicionar ao Carrinho</button>
+                </div>
+            </div>   
+        </main>
+        <!-- Rodapé -->
+        <footer>
+            <p>© 2024 ESCTEC Brasil - Fone (xx) xxxx-xxxx | faleconosco@esctecbrasil.com.br</p>
+        </footer>
+    </div>
+    
+    <script src="../../js/script.js"></script>
+    <script src="../../js/carrinho.js"></script>
+</body>
+</html>

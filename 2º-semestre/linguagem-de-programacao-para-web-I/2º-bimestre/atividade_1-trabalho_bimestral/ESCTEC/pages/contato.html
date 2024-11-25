@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style-contato_pedidos.css">
+    <link rel="stylesheet" href="../styles/header-nav-bar.css">
+    <link rel="shortcut icon" href="../assets/imgs/logo/logowt.png" type="image/x-icon">
+</head>
+<body>
+<div class="main-elements">
+    <!-- Cabeçalho -->
+    <header>
+        <div id="logo">
+            <img src="../assets/imgs/logo/logowt.png" alt="Logotipo da ESCTEC">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown"><a>A empresa</a>
+                    <ul class="drop-list">
+                        <li><a href="../pages/Empresa/missao.html">Missão</a></li>
+                        <li><a href="../pages/Empresa/valores.html">Valores</a></li>
+                        <li><a href="../pages/Empresa/visao.html">Visão</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="../pages/Produtos/produtos.html">Produtos</a>
+                    <ul class="drop-list">
+                        <li><a href="pages/Produtos/mesas.html">Mesas</a></li>
+                        <li><a href="pages/Produtos/cadeiras.html">Cadeiras</a></li>
+                        <li><a href="pages/Produtos/diversos.html">Diversos</a></li>
+                    </ul>
+                </li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="saudacao"></div> <!-- Div para exibir a saudação -->
+    
+    <main>
+        <h1>Contato</h1>
+        <div class="contato-imagem-classe">
+            <form>
+                <div>
+                    <label for="fnome">Nome</label><br>
+                    <input type="text" id="fnome-id" name="fnome" placeholder="Nome" required><br><br>
+    
+                    <label for="fempresa">Empresa</label><br>
+                    <input type="text" id="fempresa-id" name="fempresa" placeholder="Empresa" required><br><br>
+                    
+                    <label for="fcidade">Cidade</label><br>
+                    <input type="text" id="fcidade-id" name="fcidade" placeholder="Cidade" required><br><br>
+                    
+                    <label for="ftelefone">Telefone</label><br>
+                    <input type="tel" id="ftelefone-id" name="ftelefone" placeholder="Telefone" required><br><br>
+    
+                    <label for="femail">Email</label><br>
+                    <input type="email" id="femail-id" name="femail" placeholder="Email" required><br><br>
+                    
+                    <label for="departamento-id">Departamento</label><br>
+                    <select id="departamento-id" name="departamento" required>
+                        <option value="">Selecione um departamento</option>
+                        <option value="Departamento para Contato">Departamento para Contato</option>
+                    </select><br><br>
+                    
+                    <!-- radio -->
+                    <hr>
+                        <br><br>
+                        <label>Como conheceu a ESCTEC?</label><br>
+                        <div class="radio-container">
+                            <div class="radio-group">
+                                <label for="indicacao">Indicação</label>
+                                <input type="radio" id="indicacao" name="como_conheceu" value="Indicação" required>
+                            </div>
+    
+                            <div class="radio-group">
+                                <label for="email-conheceu">Email</label>
+                                <input type="radio" id="email-conheceu" name="como_conheceu" value="Email" required>
+                            </div>
+    
+                            <div class="radio-group">
+                                <label for="buscadores">Buscadores</label>
+                                <input type="radio" id="buscadores" name="como_conheceu" value="Buscadores" required>
+                            </div>
+                        </div>
+                    
+                    <!-- Área de Texto -->
+                    <label for="mensagem">Mensagem</label><br>
+                    <textarea id="mensagem-id" name="mensagem" rows="3" cols="20" required></textarea><br><br>
+                    
+                    <!-- Botões -->
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2024 ESCTEC Brasil - Fone (xx) xxxx-xxxx | faleconosco@esctecbrasil.com.br</p>
+    </footer>
+</div>
+
+<script src="../js/script.js"></script>
+<script src="../js/contato.js"></script>
+</body>
+</html>

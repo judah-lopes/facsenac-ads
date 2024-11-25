@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style-contato_pedidos.css">
+    <link rel="stylesheet" href="../styles/header-nav-bar.css">
+    <link rel="shortcut icon" href="../assets/imgs/logo/logowt.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main-elements">
+        <!-- Cabeçalho -->
+        <header>
+            <div id="logo">
+                <img src="../assets/imgs/logo/logowt.png" alt="Logotipo da ESCTEC">
+            </div>
+            
+            
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li class="dropdown"><a>A empresa</a>
+                        <ul class="drop-list">
+                            <li><a href="Empresa/missao.html">Missão</a></li>
+                            <li><a href="Empresa/valores.html">Valores</a></li>
+                            <li><a href="Empresa/visao.html">Visão</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="Produtos/produtos.html">Produtos</a>
+                        <ul class="drop-list">
+                            <li><a href="Produtos/mesas.html">Mesas</a></li>
+                            <li><a href="Produtos/cadeiras.html">Cadeiras</a></li>
+                            <li><a href="Produtos/diversos.html">Diversos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pedidos.html">Pedidos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="saudacao"></div> <!-- Div para exibir a saudação -->
+        
+        <!-- Conteúdo da Página -->
+        <main>
+            <h1>Página de Pedidos</h1>
+            <div class="pedido-imagem-classe">
+                <form>
+                    <div>
+                        <label for="vendedor">Nome do Vendedor</label><br>
+                        <select id="vendedor" name="vendedor" onchange="preencherFormularioVendedores()" required>
+                            <option value="">Selecione um vendedor</option>
+                            <option value="vendedor1">Ana Oliveira</option>
+                            <option value="vendedor2">Carlos Almeida</option>
+                            <option value="vendedor3">José Santos</option>
+                            <option value="vendedor4">Mariana Silva</option>
+                            <option value="vendedor5">Pedro Snoopy</option>
+                        </select><br><br>
+
+                        <label for="empresa">Empresa</label><br>
+                        <input type="text" id="empresa" name="empresa" placeholder="Empresa" required readonly><br><br>
+
+                        <label for="cnpj">CNPJ</label><br>
+                        <input type="text" id="cnpj" name="cnpj" placeholder="CNPJ" required><br><br>
+
+                        <label for="endereco">Endereço</label><br>
+                        <input type="text" id="endereco" name="endereco" placeholder="Endereço" required readonly><br><br>
+
+                        <label for="cidade">Cidade</label><br>
+                        <input type="text" id="cidade" name="cidade" placeholder="Cidade" required readonly><br><br>
+
+                        <label for="uf">UF</label><br>
+                        <input type="text" id="uf" name="uf" placeholder="UF" required readonly><br><br>
+
+                        <label for="telefone">Telefone</label><br>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required readonly><br><br>
+
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" placeholder="Email" required readonly><br><br>
+
+                        <h3>Itens de Produto</h3>
+                        <br>
+                        <div id="produtos">
+                            <div class="produto-item">
+                                <label>Produto 1</label><br>
+                                <select class="produto" onchange="preencherFormularioProd(this)" required>
+                                    <option value="">Selecione um produto</option>
+                                    
+                                    <!-- Cadeiras -->
+                                    <option value="">---- CADEIRAS --------------</option>
+                                    <option value="cd_01">CD01</option>
+                                    <option value="cd_02">CD02</option>
+                                    <option value="cd_03">CD03</option>
+                                    <option value="cd_04">CD04</option>
+                                    <option value="cd_05">CD05</option>
+                                    <option value="cd_06">CD06</option>
+                                    
+                                    <!-- Mesas -->
+                                    <option value="">---- MESAS -----------------</option>
+                                    <option value="ms_01">MS01</option>
+                                    <option value="ms_02">MS02</option>
+                                    <option value="ms_03">MS03</option>
+                                    <option value="ms_05">MS04</option>
+                                    <option value="ms_04">MS05</option>
+                                    <option value="ms_06">MS06</option>
+                                    
+                                    <!-- Diversos -->
+                                    <option value="">---- DIVERSOS -------------</option>
+                                    <option value="dv_01">DV01</option>
+                                    <option value="dv_02">DV02</option>
+                                    <option value="dv_03">DV03</option>
+                                    <option value="dv_04">DV04</option>
+                                    <option value="dv_05">DV05</option>
+                                    <option value="dv_06">DV06</option>
+                                    <option value="dv_07">DV07</option>
+                                    <option value="dv_08">DV08</option>
+                                </select>
+                                
+                                <input type="text" class="descricao" placeholder="Descrição" readonly>
+
+                                <div class="qtd-valor">
+                                    <input type="number" class="qtd" placeholder="Quantidade" min="1" onchange="calcValorTotalProduto(this)" required>
+                                    <input type="text" class="valor" placeholder="Valor Unitário" required readonly>
+                                </div>
+                                
+                                <label>Total: 
+                                <input type="text" class="total" placeholder="Valor Total" readonly>
+                            </div>
+                        </div>
+
+                        <!-- Botão Adicionar Produto -->
+                        <button id="btn-adicionar" onclick="adicionarProduto()">+</button>
+
+                        <label for="valor-total">Valor Total do Pedido</label><br>
+                        <input type="text" id="valor-total" name="valor_total" placeholder="Valor Total do Pedido" readonly><br><br>
+
+                        <hr>
+                        <br><br>
+                        <label>Como conheceu a ESCTEC?</label><br>
+                        <div class="radio-container">
+                            <div class="radio-group">
+                                <label for="indicacao">Indicação</label>
+                                <input type="radio" id="indicacao" name="como_conheceu" value="Indicação" required>
+                            </div>
+    
+                            <div class="radio-group">
+                                <label for="email-conheceu">Email</label>
+                                <input type="radio" id="email-conheceu" name="como_conheceu" value="Email" required>
+                            </div>
+    
+                            <div class="radio-group">
+                                <label for="buscadores">Buscadores</label>
+                                <input type="radio" id="buscadores" name="como_conheceu" value="Buscadores" required>
+                            </div>
+                        </div>
+
+                        <label for="mensagem">Mensagem</label><br>
+                        <textarea id="mensagem" name="mensagem" rows="3" cols="20" placeholder="Digite sua mensagem..."></textarea><br><br>
+
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>© 2024 ESCTEC Brasil - Fone (xx) xxxx-xxxx | faleconosco@esctecbrasil.com.br</p>
+        </footer>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/pedidos.js"></script>
+</body>
+</html>
