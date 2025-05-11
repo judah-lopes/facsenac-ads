@@ -1,0 +1,103 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Ex2_Main",
+            "request": "launch",
+            "mainClass": "lista1.Ex2_Main",
+            "projectName": "facsenac-ads_fd5ef695"
+        },
+        {
+            "type": "java",
+            "name": "Ex1_Main",
+            "request": "launch",
+            "mainClass": "lista1.Ex1_Main",
+            "projectName": "facsenac-ads_fd5ef695"
+        },
+        {
+            "type": "java",
+            "name": "Executar Ex1_Main",
+            "request": "launch",
+            "mainClass": "lista1.Ex1_Main",
+            "projectName": "lista3"
+        },
+        {
+            "type": "java",
+            "name": "Executar Ex2_Main",
+            "request": "launch",
+            "mainClass": "lista1.Ex2_Main",
+            "projectName": "lista3"
+        },
+        {
+            "type": "java",
+            "name": "Executar Ex3_Main",
+            "request": "launch",
+            "mainClass": "lista1.Ex3_Main",
+            "projectName": "lista3"
+        },
+        {
+            "type": "java",
+            "name": "Executar Ex4_Main",
+            "request": "launch",
+            "mainClass": "lista1.Ex4_Main",
+            "projectName": "lista3"
+        },
+        {
+            "type": "java",
+            "name": "Executar Ex5_Main",
+            "request": "launch",
+            "mainClass": "lista1.Ex5_Main",
+            "projectName": "lista3"
+        },
+        {
+            "type": "java",
+            "name": "Executar Ex6_Main",
+            "request": "launch",
+            "mainClass": "lista1.Ex6_Main",
+            "projectName": "lista3"
+        },
+        {
+            "type": "java",
+            "name": "Executar Ex7_Main",
+            "request": "launch",
+            "mainClass": "lista1.Ex7_Main",
+            "projectName": "lista3"
+        },
+        {
+            "type": "java",
+            "name": "Executar Ex8_Main",
+            "request": "launch",
+            "mainClass": "lista1.Ex8_Main",
+            "projectName": "lista3"
+        },
+        {
+            "type": "java",
+            "name": "Executar Ex1_Main",
+            "request": "launch",
+            "mainClass": "lista2.Ex1_Main",
+            "projectName": "lista3"
+        },
+        {
+            "type": "java",
+            "name": "Executar Ex2_Main",
+            "request": "launch",
+            "mainClass": "lista2.Ex2_Main",
+            "projectName": "lista3"
+        },
+        {
+            "type": "java",
+            "name": "Executar Ex3_Main",
+            "request": "launch",
+            "mainClass": "lista2.Ex3_Main",
+            "projectName": "lista3"
+        },
+        {
+            "type": "java",
+            "name": "Executar Ex4_Main",
+            "request": "launch",
+            "mainClass": "lista2.Ex4_Main",
+            "projectName": "lista3"
+        }
+    ]
+}
