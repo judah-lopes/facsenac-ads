@@ -3,6 +3,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Academia_Main",
+            "request": "launch",
+            "mainClass": "academia.Academia_Main",
+            "projectName": "facsenac-ads_fd5ef695"
+        },
+        {
+            "type": "java",
+            "name": "Impressora_Main",
+            "request": "launch",
+            "mainClass": "polimorfismo.Impressora_Main",
+            "projectName": "facsenac-ads_fd5ef695"
+        },
+        {
+            "type": "java",
+            "name": "Ex1_Main",
+            "request": "launch",
+            "mainClass": "Ex1_Main",
+            "projectName": "facsenac-ads_fd5ef695"
+        },
+        {
+            "type": "java",
             "name": "Ex2_Main",
             "request": "launch",
             "mainClass": "lista1.Ex2_Main",
