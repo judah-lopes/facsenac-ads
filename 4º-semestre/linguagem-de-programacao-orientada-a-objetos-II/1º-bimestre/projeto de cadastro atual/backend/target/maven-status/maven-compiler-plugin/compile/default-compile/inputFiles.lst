@@ -1,0 +1,9 @@
+/home/ubuntu/crud-project/backend/src/main/java/com/example/crud/entity/Autor.java
+/home/ubuntu/crud-project/backend/src/main/java/com/example/crud/repository/AutorRepository.java
+/home/ubuntu/crud-project/backend/src/main/java/com/example/crud/service/AutorService.java
+/home/ubuntu/crud-project/backend/src/main/java/com/example/crud/CrudApplication.java
+/home/ubuntu/crud-project/backend/src/main/java/com/example/crud/controller/AutorController.java
+/home/ubuntu/crud-project/backend/src/main/java/com/example/crud/repository/LivroRepository.java
+/home/ubuntu/crud-project/backend/src/main/java/com/example/crud/service/LivroService.java
+/home/ubuntu/crud-project/backend/src/main/java/com/example/crud/controller/LivroController.java
+/home/ubuntu/crud-project/backend/src/main/java/com/example/crud/entity/Livro.java

@@ -1,0 +1,37 @@
+<div class="container">
+  <h2>Lista de Autores</h2>
+  
+  <div class="actions">
+    <a routerLink="/autor/novo" class="btn btn-primary">Novo Autor</a>
+  </div>
+
+  <div class="table-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Biografia</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let autor of autores">
+          <td>{{ autor.id }}</td>
+          <td>{{ autor.nome }}</td>
+          <td>{{ autor.email }}</td>
+          <td>{{ autor.biografia }}</td>
+          <td>
+            <a [routerLink]="['/autor/editar', autor.id]" class="btn btn-edit">Editar</a>
+            <button (click)="deletarAutor(autor.id!)" class="btn btn-delete">Deletar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="autores.length === 0" class="no-data">
+    Nenhum autor encontrado.
+  </div>
+</div>

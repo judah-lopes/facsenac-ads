@@ -1,0 +1,57 @@
+<div class="container">
+  <h2>{{ isEditMode ? 'Editar Autor' : 'Novo Autor' }}</h2>
+  
+  <form (ngSubmit)="salvarAutor()" #autorForm="ngForm">
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input 
+        type="text" 
+        id="nome" 
+        name="nome" 
+        [(ngModel)]="autor.nome" 
+        required 
+        class="form-control"
+        #nome="ngModel">
+      <div *ngIf="nome.invalid && nome.touched" class="error">
+        Nome é obrigatório.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        [(ngModel)]="autor.email" 
+        required 
+        email
+        class="form-control"
+        #email="ngModel">
+      <div *ngIf="email.invalid && email.touched" class="error">
+        <div *ngIf="email.errors?.['required']">Email é obrigatório.</div>
+        <div *ngIf="email.errors?.['email']">Email deve ter um formato válido.</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="biografia">Biografia:</label>
+      <textarea 
+        id="biografia" 
+        name="biografia" 
+        [(ngModel)]="autor.biografia" 
+        class="form-control"
+        rows="4">
+      </textarea>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" [disabled]="autorForm.invalid" class="btn btn-primary">
+        {{ isEditMode ? 'Atualizar' : 'Salvar' }}
+      </button>
+      <button type="button" (click)="cancelar()" class="btn btn-secondary">
+        Cancelar
+      </button>
+    </div>
+  </form>
+</div>

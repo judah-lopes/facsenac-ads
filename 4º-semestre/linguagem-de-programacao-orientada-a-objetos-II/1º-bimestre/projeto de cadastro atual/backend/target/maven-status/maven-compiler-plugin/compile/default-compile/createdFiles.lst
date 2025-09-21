@@ -1,0 +1,9 @@
+com/example/crud/service/LivroService.class
+com/example/crud/service/AutorService.class
+com/example/crud/entity/Autor.class
+com/example/crud/repository/AutorRepository.class
+com/example/crud/controller/LivroController.class
+com/example/crud/entity/Livro.class
+com/example/crud/CrudApplication.class
+com/example/crud/controller/AutorController.class
+com/example/crud/repository/LivroRepository.class
